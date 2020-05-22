@@ -1,6 +1,6 @@
 # sandbox_githubpage-vue
 
-Test Deploying a react project on Github Page using the `vue.config.js` and `deploy.sh`. Both files must be created at the root of the project and configured according to source link below.
+Test Deploying a Vue project on Github Page using the `vue.config.js` and `deploy.sh`. Both files must be created at the root of the project and configured according to source link below.
 
 Source: https://cli.vuejs.org/guide/deployment.html#github-pages
 
