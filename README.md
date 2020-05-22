@@ -1,24 +1,21 @@
 # sandbox_githubpage-vue
 
-Test Deploying a react project on Github Page using the `gh-pages package`
+Test Deploying a react project on Github Page using the `vue.config.js` and `deploy.sh`. Both files must be created at the root of the project and configured according to source link below.
+
+Source: https://cli.vuejs.org/guide/deployment.html#github-pages
 
 ---
 
-> By installing the **gh-pages**, `gh-pages branch` is created automatically where the page will be created and hosted instantaneously.
+> The `vue.config.js` specifies the PublicPath project name
 
-### Steps to deploying with gh-pages
+> The `deploy.sh` contains the script command for deploying at the right Github Page URL
+
+### Steps to deploying Vue project on Github Pages
 
 1. Run `npm run build`
-2. Run `npm install gh-pages`
-3. Add `"deploy": "gh-pages -d dist"` to the Script in the `package.json`
-   - the `dist` folder, _by VueJS default_, contains files to be deployed on the Github Page
-4. Add `"homepage": "https://<USERNAME>.github.io/<PROJECT-NAME_LOWERCASE>"` as a new property
+2. Create `vue.config.js` and `deploy.sh`
+3. Follow the instruction found at: https://cli.vuejs.org/guide/deployment.html#github-pages
+4. Add `"deploy": "bash deploy.sh"` as a new property of the "scripts" object
 5. Run `npm run deploy`
-6. Access the link provided by Github under `settings > Options > Github Pages`
 
 ---
-
-### Possible Errors & Solutions
-
-- fatal: A branch named 'gh-pages' already exists.  
-  https://github.com/transitive-bullshit/react-modern-library-boilerplate/issues/15
